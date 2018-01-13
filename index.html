@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
     <title>Hair OLIVE</title>
+    <meta name="viewport" content="width=device-width,initial-scale-1,shrink-to-fit=no">
   </head>
 <body>
   <header>
@@ -14,6 +15,7 @@
     </div>
 
     <div class="navbar">
+      <div class="in-nav">
       <ul>
         <li>ABOUT - ご紹介</li>
         <li>HOW TO - ご利用方法</li>
@@ -22,29 +24,32 @@
         <li>CONTACT - お問い合わせ・アクセス</li>
       </ul>
     </div>
+    </div>
   </header>
 
   <div class="contents clearfix">
       <div class="left-content">
         <h2>新着情報</h2>
+        <div class="table">
         <table>
-          <tr>
-            <th>日にち</th>
-            <th>ニュース</th>
-          </tr>
-          <tr>
-            <td>2014/10/06</td>
-            <td>【新規のお客さま限定】<strong>10％OFF</strong>キャンペーン</td>
-          </tr>
-          <tr>
-            <td>2014/10/03</td>
-            <td>うれしい<em>ポイントアップキャンペーン</em></td>
-          </tr>
-          <tr>
-            <td>2014/09/27</td>
-            <td>2015年成人式 ご予約承ります</td>
-          </tr>
+            <tr>
+              <th>日にち</th>
+              <th>ニュース</th>
+            </tr>
+            <tr>
+              <td>2014/10/06</td>
+              <td>【新規のお客さま限定】<strong>10％OFF</strong>キャンペーン</td>
+            </tr>
+            <tr>
+              <td>2014/10/03</td>
+              <td>うれしい<em>ポイントアップキャンペーン</em></td>
+            </tr>
+            <tr>
+              <td>2014/09/27</td>
+              <td>2015年成人式 ご予約承ります</td>
+            </tr>
         </table>
+      </div>
         <h2>スタイリスト紹介</h2>
         <ul>
          <li>
@@ -59,38 +64,40 @@
      </div>
       <div class="right-content">
         <h3>recommend</h3>
-        １５周年キャンペーン
-        <a href="https://tech-camp.in">→詳しくはこちら</a>
-        </p>
+        <p>15周年キャンペーン
+        <a href="https://tech-camp.in">→詳しくはこちら</a></p>
           <h3>アプリで簡単予約</h3>
+          <div class="link">
           <p>
           <a href="https://itunes.apple.com">App Store</a>
           <a href="https://store.google.com">Google Play</a>
           </p>
+        </div>
+        <div class="outer">
 
-          <form>
-          <input type="text" placeholder="名前を入力してください"><br>
-          <textarea placeholder="予約日時やご要望をお書きください"></textarea><br>
-          <label>
-            <input type="radio" name="RadioGroup1" value="0">　男性
+          <form class="form">
+          <textarea type="text" placeholder="名前を入力してください" style=""></textarea><br>
+          <textarea type="text" placeholder="予約日時やご要望をお書きください"></textarea><br>
+          <label>男性
+            <input type="radio" name="RadioGroup1" value="0">
           </label><br>
-          <label>
-            <input type="radio" name="RadioGroup1" value="1">　女性<br>
-          </label>
-          アンケートにご協力ください。
-          <label><br>
-            <input type="checkbox" name="Checkbox" value="チェックボックス">
+          <label>女性
+            <input type="radio" name="RadioGroup1" value="1">
+          </label><br>
+            <label id="long'">アンケートにご協力ください。
+            <input type="checkbox" name="Checkbox" value="チェックボックス"><br>
             このサイトは役立った </label>
-            <select>
+            <select id="select">
               <option value="student">学生</option>
               <option value="businessperson">社会人</option>
               <option value="businessperson">経営者</option>
               <option value="businessperson">営業</option>
               <option value="businessperson">技術者</option>
             </select>
-            <input type="submit" value="予約メールを送る">
+            <br>
+            <input id="reserved" type="submit" value="予約メールを送る">
           </form>
-
+          </div>
         </div>
   </div>
   <footer>
